@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="initialize">
+      <h3>Initialize</h3>
+      <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" required>
+        <button id="initialize-btn">Initialize</button>
+      </form>
+    </div>
+    <div id="login" style="display: none;">
+      <h3>Login</h3>
+      <form>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" required>
+        <button id="login-btn">Login</button>
+      </form>
+    </div>
+    <div id="secret-view" style="display: none;">
+      <h3>Your Secret</h3>
+      <p id="secret">-</p>
+      <button id="regenerate-btn">Regenerate Secret</button>
+      <button id="logout-btn">Logout</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
